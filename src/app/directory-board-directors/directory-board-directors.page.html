@@ -20,30 +20,25 @@ pantalla primaria ejemplo a todas  -->
           </ion-buttons>
     </ion-toolbar>
   </ion-header>
+
   <ion-toolbar id="toolbar" color="black">
     <ion-buttons slot="start">
       <ion-button>
         <img id="logoimperium"   src="\assets\logoImperium.png">
       </ion-button>
     </ion-buttons>
-        <ion-title   id="labelh">Security Attencion</ion-title>
+        <ion-title   id="labelh">Directory Board Directors</ion-title>
   </ion-toolbar>
 
-  <ion-card>
-    <img  src="\assets\logoImperium.png" alt="">
-  </ion-card>
-
-  <ion-card>
- 
-    <ion-button mode="md" id="btnMenus"  [routerLink]="['/incident-reports']" >Comunicados incidentes </ion-button><br>
-    <hr>
-    <ion-button mode="md" id="btnMenus" [routerLink]="['/guards-releases']">Comunicados guardias</ion-button><br>
-    <hr>
-    <ion-button mode="md" id="btnMenus" [routerLink]="['/directory']">directorio</ion-button><br>
-    
 
 
-  </ion-card>
-
-  
+  <!-- List of Text Items -->
+  <ion-list mode="md"  *ngFor="let post of datos ">
+    <ion-item >
+      <img id="menus" [routerLink]="['/home']"  src="\assets\iconosmenu\usuario.png">br
+      <ion-label id="label" >{{post.nombre}}</ion-label>
+      <ion-label id="label" >{{post.tipoRegistro}}</ion-label>
+    </ion-item>
+    <hr>   
+  </ion-list>
 </ion-content>

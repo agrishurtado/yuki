@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
-import { AccessCreatePage } from './access-create.page';
+import { DirectoryBoardDirectorsPage } from './directory-board-directors.page';
 
 const routes: Routes = [
   {
     path: '',
-    component: AccessCreatePage
+    component: DirectoryBoardDirectorsPage
   }
 ];
 
@@ -14,4 +14,4 @@ const routes: Routes = [
   imports: [RouterModule.forChild(routes)],
   exports: [RouterModule],
 })
-export class AccessCreatePageRoutingModule {}
+export class DirectoryBoardDirectorsPageRoutingModule {}

@@ -23,15 +23,15 @@ const routes: Routes = [
   path: 'access-out',
   loadChildren: () => import('./access-out/access-out.module').then( m => m.AccessOutPageModule)
 },{
-  path: 'access-create',
-  loadChildren: () => import('./access-create/access-create.module').then( m => m.AccessCreatePageModule)
+  path: 'acces-create/:id',
+  loadChildren: () => import('./acces-create/acces-create.module').then( m => m.AccesCreatePageModule)
 },
 {
   path: 'access-performed',
   loadChildren: () => import('./access-performed/access-performed.module').then( m => m.AccessPerformedPageModule)
 },
 {
-  path: 'access-create-out',
+  path: 'access-create-out/:id',
   loadChildren: () => import('./access-create-out/access-create-out.module').then( m => m.AccessCreateOutPageModule)
 },
 {
@@ -69,6 +69,18 @@ const routes: Routes = [
   {
     path: 'directory',
     loadChildren: () => import('./directory/directory.module').then( m => m.DirectoryPageModule)
+  },
+  {
+    path: 'directory-board-directors',
+    loadChildren: () => import('./directory-board-directors/directory-board-directors.module').then( m => m.DirectoryBoardDirectorsPageModule)
+  },
+  {
+    path: 'directory-colonos',
+    loadChildren: () => import('./directory-colonos/directory-colonos.module').then( m => m.DirectoryColonosPageModule)
+  },
+  {
+    path: 'directory-provider',
+    loadChildren: () => import('./directory-provider/directory-provider.module').then( m => m.DirectoryProviderPageModule)
   },
 
 ];

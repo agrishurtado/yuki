@@ -1,0 +1,11 @@
+{
+  "targets": {
+    "vigilancia-a3d69": {
+      "hosting": {
+        "app": [
+          "vigilancia-a3d69"
+        ]
+      }
+    }
+  }
+}

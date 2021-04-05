@@ -4,17 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { AccessCreatePageRoutingModule } from './access-create-routing.module';
+import { AccesCreatePageRoutingModule } from './acces-create-routing.module';
 
-import { AccessCreatePage } from './access-create.page';
+import { AccesCreatePage } from './acces-create.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    AccessCreatePageRoutingModule
+    AccesCreatePageRoutingModule
   ],
-  declarations: [AccessCreatePage]
+  declarations: [AccesCreatePage]
 })
-export class AccessCreatePageModule {}
+export class AccesCreatePageModule {}
